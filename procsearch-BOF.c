@@ -92,7 +92,7 @@ void SearchStringInProcessMemory(DWORD processId, const char* searchString) {
                         found = MSVCRT$strstr(found + 1, searchString);
                     }
                 } else {
-                    BeaconFormatPrintf(&obj,"[-] Failed reading process memory\n");
+                    //BeaconFormatPrintf(&obj,"[-] Failed reading process memory\n");
                     break;
                 }
 
