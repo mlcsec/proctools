@@ -1,0 +1,22 @@
+alias prockill {
+	
+    local('$1 $pid');
+    
+    ($1, $pid) = @_;
+	
+    if (size(@_) != 2)
+    {
+        berror($1, "Usage : prockill <pid>");
+		return;
+    }
+	
+    $handle = openf(script_resource("prockill-BOF.o"));
+    $data = readb($handle, -1);
+    closef($handle);
+
+    $args = bof_pack($1 , "i", $pid);
+
+    beacon_inline_execute($1, $data, "go", $args);
+}
+
+beacon_command_register("prockill", "Kill target process", "Synopsis: prockill <pid>");
