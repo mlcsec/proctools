@@ -64,6 +64,18 @@ x86_64-w64-mingw32-gcc -c procinfo-BOF.c -o procinfo-BOF.o
 
 <br>
 
+## procargs-BOF.c
+
+Extract command line arguments for the specified process. Compile and load .cna:
+```
+x86_64-w64-mingw32-gcc -c procargs.c -o procargs-BOF.o
+```
+
+![image](https://github.com/mlcsec/proctools/assets/47215311/2d9a7445-ee32-48ae-8894-f8908a63dbc2)
+
+
+<br>
+
 ## prockill-BOF.c
 
 Terminate a process (or just use `kill` in CS, not sure why I made this):
