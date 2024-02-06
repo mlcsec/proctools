@@ -1,0 +1,22 @@
+alias procargs {
+	
+    local('$1 $pid');
+    
+    ($1, $pid) = @_;
+	
+    if (size(@_) != 2)
+    {
+        berror($1, "Usage : procargs <pid>");
+		return;
+    }
+	
+    $handle = openf(script_resource("procargs-BOF.o"));
+    $data = readb($handle, -1);
+    closef($handle);
+
+    $args = bof_pack($1 , "i", $pid);
+
+    beacon_inline_execute($1, $data, "go", $args);
+}
+
+beacon_command_register("procargs", "Display process cmdline arguments", "Synopsis: procargs <pid>");
