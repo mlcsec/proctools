@@ -2,6 +2,24 @@
 
 Small toolkit for extracting information and dumping sensitive strings from Windows processes . Made to accompany another project that's in the works.
 
+- **procsearch** - find sensitive strings in target process memory
+  - searches for parsed string in readable process memory, if found, displays a range of valid ASCII chars around the search string
+- **procinfo** - display the following file version information for the process executable:
+  - process name
+  - description
+  - product name
+  - file version
+  - internal name
+  - company name
+  - comments
+  - legal copyright
+  - legal trademarks
+  - product version
+  - private build
+  - special build
+- **procargs** - extract command line arguments for target process
+- **prockill** - terminate target process
+
 <br>
 
 ## procsearch.cpp
