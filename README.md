@@ -6,7 +6,7 @@ Small toolkit for extracting information and dumping sensitive strings from Wind
 
 ## procsearch.cpp
 
-Dump process memory and searching for readable strings. PID, search string, and range supplied only for this version. When the search string is found, the range parameter indicates how many characters each side of the found string should be printed as long as they're valid ASCII.
+Dump process memory and search for readable strings. PID, search string, and range supplied only for this version. When the search string is found, the range parameter indicates how many characters each side of the found string should be printed as long as they're valid ASCII.
 
 Compile in VS. Example below dumping user information from Outlook process:
 ```
