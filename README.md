@@ -1,6 +1,6 @@
 # proctools
 
-Small toolkit for obtaining process information and dumping sensitive strings. Made to accompany another project that's in the works.
+Small toolkit for extracting information and dumping sensitive strings from Windows processes . Made to accompany another project that's in the works.
 
 <br>
 
