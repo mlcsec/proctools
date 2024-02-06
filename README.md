@@ -39,8 +39,7 @@ Example dumping dummy user data from Outlook process:
 
 <br>
 
-https://github.com/mlcsec/ProcSearch-test/assets/47215311/94b69da9-61aa-4436-b571-527dc39c8f6b
-
+https://github.com/mlcsec/proctools/assets/47215311/dccd1223-774e-4dec-8353-91c057900a07
 
 <br>
 
@@ -48,7 +47,7 @@ https://github.com/mlcsec/ProcSearch-test/assets/47215311/94b69da9-61aa-4436-b57
 
 C# utility to print all file version information for the supplied pid. Compile in VS or with csc:
 
-![image](https://github.com/mlcsec/ProcSearch-test/assets/47215311/cb91f6b3-64d6-4a07-b1ce-0584db5597ed)
+![procinfo-csharp](https://github.com/mlcsec/proctools/assets/47215311/1db4bff8-d173-4d2e-a972-1e29c2d306a9)
 
 <br>
 
@@ -61,8 +60,7 @@ Compile and load .cna:
 x86_64-w64-mingw32-gcc -c procinfo-BOF.c -o procinfo-BOF.o
 ```
 
-![image](https://github.com/mlcsec/ProcSearch-test/assets/47215311/4bee7910-b183-4c43-8079-4eba9909b043)
-
+![procinfo-c](https://github.com/mlcsec/proctools/assets/47215311/41e3e9ab-0937-4d48-8b74-87e048c3718b)
 
 <br>
 
@@ -73,4 +71,4 @@ Terminate a process (or just use `kill` in CS, not sure why I made this):
 x86_64-w64-mingw32-gcc -c prockill-BOF.c -o prockill-BOF.o
 ```
 
-![prockill-BOF](https://github.com/mlcsec/ProcSearch-test/assets/47215311/788d2b6b-f2fd-4b37-8ee3-4febfeca369e)
+![prockill-BOF](https://github.com/mlcsec/proctools/assets/47215311/5ee6018b-bb8b-4f42-8372-b9e0f4a0bd6e)
