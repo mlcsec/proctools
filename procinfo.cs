@@ -34,6 +34,16 @@ class Program
                 Console.WriteLine("Product Version: " + fileVersionInfo.ProductVersion);
                 Console.WriteLine("Private Build: " + fileVersionInfo.PrivateBuild);
                 Console.WriteLine("Special Build: " + fileVersionInfo.SpecialBuild);
+                Console.WriteLine("IsDebug: " + fileVersionInfo.IsDebug);
+                Console.WriteLine("IsPatched: " + fileVersionInfo.IsPatched);
+                Console.WriteLine("IsPre Release: " + fileVersionInfo.IsPreRelease);
+                Console.WriteLine("IsPrivate Build: " + fileVersionInfo.IsPrivateBuild);
+                Console.WriteLine("IsSpecial Build: " + fileVersionInfo.IsSpecialBuild);
+                Console.WriteLine("Language: " + fileVersionInfo.Language);
+                Console.WriteLine("Product Build Part: " + fileVersionInfo.ProductBuildPart);
+                Console.WriteLine("Product Major Part: " + fileVersionInfo.ProductMajorPart);
+                Console.WriteLine("Product Minor Part: " + fileVersionInfo.ProductMinorPart);
+                Console.WriteLine("Product Private Part: " + fileVersionInfo.ProductPrivatePart);
 
             }
             else 
