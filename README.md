@@ -36,7 +36,7 @@ PS C:\Users\capde> .\procsearch.exe 7592 "email" 500
 "UK",  "login_name":"capdevuser001@outlook.com","onprem_sid": "",  "password_change_url": "",  "phone_number": "" (...)
 ```
 
-Not functioning correctly with `Inline-Execute-Assembly`. I'm working on resolving this and the C++ BOF version which should allow greater search ranges than the C version currently.
+Not functioning correctly with `Inline-Execute-PE`. I'm working on resolving this and the C++ BOF version which should allow greater search ranges than the C version currently.
 
 <br>
 
