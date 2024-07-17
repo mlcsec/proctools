@@ -1,6 +1,6 @@
 # proctools
 
-Small toolkit for extracting information and dumping sensitive strings from Windows processes . Made to accompany another project that's in the works.
+Small toolkit for extracting information and dumping sensitive strings from Windows processes . Made to accompany [FormThief](https://github.com/mlcsec/FormThief).
 
 - **procsearch** - find sensitive strings in target process memory
   - searches for parsed string in readable process memory, if found, displays a range of valid ASCII chars around the search string
